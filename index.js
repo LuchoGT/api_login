@@ -11,12 +11,11 @@ dbConnection();
 
 app.use(cors());
 
-app.use(express.static('public'));
 app.use(express.json());
 
-// app.get("/", (req, res) =>{
-//     res.send("Hola mi server en Express de prueba api ");
-//   });
+app.get("/", (req, res) =>{
+    res.send("Hola mi server en Express de prueba api ");
+  });
   
 
 routerApi(app);
